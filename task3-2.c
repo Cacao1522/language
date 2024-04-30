@@ -16,7 +16,7 @@ LOAD:
 CAL:
     ret *= stack[--stackPoint];
     if (stackPoint - 1 < 0) goto END;
-    goto STACK;
+    goto END;
 
 END:
     printf("%d\n", ret);
