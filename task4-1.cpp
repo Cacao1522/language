@@ -5,32 +5,19 @@ class StudentClass {
    private:
     std::string name;
     int number;
-    int method_a() { printf("func a"); };
 
    public:
-    int k;
-    int l;
-    int method_b() { printf("func b %d", i); };
     void setName(std::string newName) { name = newName; }
     void setNumber(int newNumber) { number = newNumber; }
     void set(std::string newName, int newNumber) {
         name = newName;
         number = newNumber;
     }
-    void show() { printf("func a"); }
+    void show() { printf("名前：%s 学生番号：%d\n", name.c_str(), number); }
 };
 int main() {
-    TestClass t;
-    t.method_b();
-    t.k = 1;
-    t.l = 2;
-    printf("k:%d\n", t.k);
-    printf("l:%d\n", t.l);
-    // t.i = 1;
-    // t.j = 2;
-    //  printf("k:%d", t.i);
-    //  printf("l:%d", t.j);
-    //  t.method_a();
-    t.call_method_a();
+    StudentClass t;
+    t.set("加藤薫", 34714037);
+    t.show();
     return 0;
 }
