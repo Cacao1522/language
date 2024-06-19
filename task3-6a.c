@@ -4,7 +4,7 @@
 static int global_value = 10;
 
 // グローバル関数
-static void global_function()
+void global_function()
 {
     printf("グローバル関数a\n");
 }
