@@ -1,6 +1,6 @@
 #include <stdio.h>
-
 #include <string>
+
 class Student
 {
 private:

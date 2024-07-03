@@ -1,12 +1,12 @@
 # マクロ定義部
-CC=gcc
+CC=g++
 OBJS = main.o stack.o 
 # 生成規則部
-a.out: $(OBJS)
+stack: $(OBJS)
 		$(CC) -o stack $(OBJS)
 # サフィックスルール(.c → .o)
-.c.o:
-		g++ -c $<
+.cpp.o:
+		$(CC) -c $<
 
 stack.o: stack.hpp
 main.o: stack.hpp 

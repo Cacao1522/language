@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 #include <string>
 class Room
 {
@@ -22,7 +21,9 @@ public:
 };
 int main()
 {
-    Room r(15, 10, 3, 2);
-    r.show();
+    Room r1;
+    r1.show();
+    Room r2(15, 10, 3, 2);
+    r2.show();
     return 0;
 }
