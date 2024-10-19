@@ -8,5 +8,5 @@ stack: $(OBJS)
 .cpp.o:
 		$(CC) -c $<
 
-stack.o: stack.hpp
-main.o: stack.hpp 
+stack.o: stack.hpp stack.cpp
+main.o: stack.hpp main.cpp
