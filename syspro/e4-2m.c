@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-int v1, v2, v3, v4;
-int *p1, *p2, *p3, *p4, *p5;
-void stack(void);
+int v1, v2, v3, v4, v5, v6;
+void assign2(void);
 int main(int argc, char *argv[])
 {
     if (argc != 3)
@@ -12,10 +11,8 @@ int main(int argc, char *argv[])
     }
     v1 = atoi(argv[1]);
     v2 = atoi(argv[2]);
-    stack();
-    printf("v1=%d v2=%d v3=%d v4=%d \n",
-           v1, v2, v3, v4);
-    printf("p1=%p p2=%p p3=%p p4=%p p5=%p\n",
-           p1, p2, p3, p4, p5);
+    printf("v1=%d v2=%d\n", v1, v2);
+    assign2();
+    printf("(+)=%d (-)=%d (&)=%d (v1<<2)=%d\n", v3, v4, v5, v6);
     return 0;
 }
